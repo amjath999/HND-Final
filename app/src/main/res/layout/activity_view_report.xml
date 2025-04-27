@@ -13,7 +13,9 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- Header Section (No Changes) -->
+        <!-- Header Section -->
+
+        <!-- Scrollable Content -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
@@ -52,7 +54,6 @@
                 app:layout_constraintTop_toTopOf="@+id/backbtn" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Scrollable Content -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -64,7 +65,7 @@
                 android:orientation="vertical"
                 android:gravity="center_horizontal">
 
-                <!-- Image Gallery (No Changes) -->
+                <!-- Image Gallery -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -299,6 +300,7 @@
         </ScrollView>
     </LinearLayout>
 
+    <!-- Bottom AppBar -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -315,139 +317,120 @@
             app:backgroundTint="@color/white"
             app:hideOnScroll="true"
             app:fabAlignmentMode="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-
-            app:fabCradleMargin="8dp"
-            app:fabCradleRoundedCornerRadius="50dp"
-            app:fabCradleVerticalOffset="6dp">
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            tools:ignore="BottomAppBar">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.25"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/bottom_btn1" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textAlignment="center" />
+                    <ImageView
+                        android:id="@+id/imageView_home"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_home"/>
+
+                    <TextView
+                        android:id="@+id/textView_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Home"
+                        android:textColor="#4CAF50"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_claim"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_claim"/>
+
+                    <TextView
+                        android:id="@+id/textView_claim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Claim"
+                        android:textColor="#4CAF50"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_chat"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_chat"/>
+
+                    <TextView
+                        android:id="@+id/textView_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Chat"
+                        android:textColor="#4CAF50"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView_profile"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_profile"/>
+
+                    <TextView
+                        android:id="@+id/textView_profile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Profile"
+                        android:textColor="#4CAF50"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.25"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/bottom_btn1" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.25"
-                android:orientation="vertical"
-                android:visibility="invisible">
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/bottom_btn1" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.25"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/bottom_btn1" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textAlignment="center" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.25"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:id="@+id/imageView8"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp"
-                    app:srcCompat="@drawable/bottom_btn1" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Home"
-                    android:textAlignment="center" />
-            </LinearLayout>
-        </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
 
-       <com.google.android.material.floatingactionbutton.FloatingActionButton
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           app:layout_anchor="@id/app_bar"
-           app:maxImageSize="30dp"
-           tools:ignore="MissingConstraints" />
-
-
+        <!-- Floating Action Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add"
+            app:tint="#FFFFFF"
+            android:backgroundTint="#4CAF50" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

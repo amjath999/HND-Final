@@ -115,12 +115,13 @@
                             android:layout_marginBottom="12dp">
 
                             <TextView
-                                android:layout_width=""
+                                android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="Date"
                                 android:textColor="#01137A"
                                 android:textSize="18sp"/>
+
 
                             <TextView
                                 android:id="@+id/txt_damageDate"

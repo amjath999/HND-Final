@@ -193,7 +193,7 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:id="@+id/ic_direction"
+                            android:id="@+id/ic_direction2"
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginStart="12dp"
@@ -267,7 +267,7 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:id="@+id/ic_direction"
+                            android:id="@+id/ic_direction3"
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginStart="12dp"
@@ -341,7 +341,7 @@
                         </LinearLayout>
 
                         <ImageView
-                            android:id="@+id/ic_direction"
+                            android:id="@+id/ic_direction4"
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:layout_marginStart="12dp"
