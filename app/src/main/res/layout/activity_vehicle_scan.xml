@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EFF0FC"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Existing Header (NO CHANGE) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/top_background">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Vehicle Scan"
+                android:textColor="#01137A"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/backbtn"
+                app:layout_constraintStart_toEndOf="@+id/backbtn"
+                app:layout_constraintTop_toTopOf="@+id/backbtn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ScrollView for New Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Back Button -->
+
+                <!-- Title -->
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/descriptionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="Please upload a clear photo of your vehicle's\ndamage to proceed. Your data will remain\nsecure and private."
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.26"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Upload Slots -->
+                <LinearLayout
+                    android:id="@+id/uploadBox"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="24dp"
+                    android:weightSum="3"
+                    app:layout_constraintTop_toBottomOf="@id/descriptionText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <!-- Upload Slot 1 -->
+                    <LinearLayout
+                        android:id="@+id/ic_photo1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:background="@drawable/rounded_border"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp"/>
+
+                    <!-- Upload Slot 2 -->
+                    <LinearLayout
+                        android:id="@+id/ic_photo2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_border"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp"/>
+
+                    <!-- Upload Slot 3 -->
+                    <LinearLayout
+                        android:id="@+id/ic_photo3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_border"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="4dp"/>
+
+                </LinearLayout>
+
+                <!-- Divider Text -->
+                <TextView
+                    android:id="@+id/orText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="or"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/uploadBox"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <!-- Camera Button -->
+                <Button
+                    android:id="@+id/btnCamera"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#e0e0e0"
+                    android:drawableStart="@drawable/ic_camera"
+                    android:drawablePadding="10dp"
+                    android:paddingHorizontal="12dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Open Camera  Take Photo"
+                    android:textColor="#000"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/orText" />
+
+                <!-- Continue Button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnScanContinue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="CONTINUE"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAllCaps="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/blue_bg"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="24dp"
+                    android:paddingVertical="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/btnCamera"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

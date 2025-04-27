@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EFF0FC"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Existing Header -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/top_background">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Vehicle Details"
+                android:textColor="#01137A"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/backbtn"
+                app:layout_constraintStart_toEndOf="@+id/backbtn"
+                app:layout_constraintTop_toTopOf="@+id/backbtn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ScrollView for Form Elements -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:paddingBottom="16dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Type"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/txt_vehicleType"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:spinnerMode="dropdown"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make/Brand"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/txt_brand"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:spinnerMode="dropdown"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/txt_model"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:spinnerMode="dropdown"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year of Manufacture"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/txt_yearOfManufacture"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle number"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+
+                <EditText
+                    android:id="@+id/txt_VehicleNo"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Date"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/txt_registerDate"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:padding="12dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fuel Type"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/txt_fuelType"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:spinnerMode="dropdown"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transmission Type"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <Spinner
+                    android:id="@+id/txt_transmissionType"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:spinnerMode="dropdown"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Engine Number"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/txt_engineNo"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chassis Number"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/txt_chassisNo"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Color"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_marginTop="8dp"/>
+
+                <EditText
+                    android:id="@+id/txt_vehicleColor"
+                    android:layout_width="350dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/gray_border"
+                    android:padding="12dp" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_vehicleContinue"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/blue_bg"
+                    android:text="CONTINUE"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

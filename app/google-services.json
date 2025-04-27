@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "442943295841",
+    "project_id": "ai-vehicle-damage-app-a1197",
+    "storage_bucket": "ai-vehicle-damage-app-a1197.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442943295841:android:3010a4bd2e571abc7c3520",
+        "android_client_info": {
+          "package_name": "com.example.ai_vehicle_damage_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBYUkitjvHpwRoQzLBj36uiTXWmOyXUhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
